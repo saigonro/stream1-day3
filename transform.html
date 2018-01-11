@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D Transforms</title>
+        <style type="text/css">
+            div {
+                width: 300px;
+                height: 100px;
+                border: 1px solid black;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+            h1 {
+                text-align: center;
+            }
+            #div1 {
+                transform: translate(200px, -50px);
+            }
+            #div1:hover {
+                transform: translate(0,0);
+                transition: transform 2s linear;
+            }
+            #div2 {
+                transform: scale(1.2,1.2) translate(100px);
+            }
+            #div2:hover {
+                transform: scale(1,1);
+                transition: transform 2s ease;
+            }
+            #div3 {
+                transform: skew(35deg) translate(100px);
+            }
+            #div3:hover {
+                transform: skew(0deg) translate(0);
+                transition: transform 2s linear;
+            }
+            #div4 {
+                transform: rotate(45deg) translate(50px, 50px);
+            }
+            #div4:hover {
+                transform: rotate(0deg) translate(0);
+                transition: transform 2s linear;
+            }
+            #div5 {
+                transform: perspective(100px) rotateX(30deg) translate(50px, -50px);
+            }
+            #div5:hover {
+                transform: perspective(0px) translate(0) rotate(0);
+                transition: transform 2s linear;
+            }
+            #div0:hover {
+                color: red;
+                transition: color 3s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div0"><h1>Just a div</h1></div>
+        <div id="div1"><h1>I am translated</h1></div>
+        <div id="div2"><h1>I am scaled</h1></div>
+        <div id="div3"><h1>I am skewed</h1></div>
+        <div id="div4"><h1>I am rotated</h1></div>
+        <div id="div5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quos tempora illo, iusto similique distinctio expedita vel.</p></div>
+    </body>
+</html>
